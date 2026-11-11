@@ -1,0 +1,20 @@
+# dependencies
+node_modules/
+
+# env (keep .env.example tracked)
+.env
+.env.*
+!.env.example
+
+# logs / debug
+*.log
+npm-debug.log*
+logs/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
