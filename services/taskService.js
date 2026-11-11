@@ -2,7 +2,7 @@ import { NotFoundError } from '../errors/AppError.js';
 import { taskRepository as defaultTaskRepository } from '../repositories/taskRepository.js';
 import { pickFields } from '../utils/pickFields.js';
 
-const TASK_FIELDS = ['title', 'description', 'dueAt', 'priority', 'status'];
+const TASK_FIELDS = ['title', 'description', 'dueAt', 'endsAt', 'status'];
 
 /**
  * Task business rules (SRP).
