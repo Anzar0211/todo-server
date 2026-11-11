@@ -19,3 +19,25 @@ npm start      # production
 ```
 
 API listens on `http://localhost:5000` by default.
+
+## Endpoints
+
+### Auth
+
+| Method | Path | Auth | Description |
+|--------|------|------|-------------|
+| `POST` | `/api/auth/register` | No | Create account (`name`, `email`, `password`) |
+| `POST` | `/api/auth/login` | No | Sign in (`email`, `password`) |
+| `GET` | `/api/auth/me` | Bearer | Current user |
+
+### Tasks
+
+All task routes require `Authorization: Bearer <token>`.
+
+| Method | Path | Description |
+|--------|------|-------------|
+| `GET` | `/api/tasks` | List tasks |
+| `POST` | `/api/tasks` | Create task (`title`, `description`, `dueAt`, `priority`, `status`) |
+| `PUT` | `/api/tasks/:id` | Update task |
+| `DELETE` | `/api/tasks/:id` | Delete task |
+
