@@ -3,8 +3,8 @@
     "version": "1.0.0",
     "type": "module",
     "scripts": {
-      "start": "node index.js",
-      "dev": "node --watch index.js"
+      "dev": "NODE_ENV=development node --watch index.js",
+      "start": "NODE_ENV=production node index.js"
     },
     "dependencies": {
       "bcryptjs": "^3.0.3",
